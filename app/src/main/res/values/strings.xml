@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Vending Machine</string>
+    <string name="v_m_inventory">Inventory</string>
+    <string name="v_m_coins">Coins</string>
+    <string name="v_m_item">Item</string>
+    <string name="v_m_status">Status</string>
+    <string name="v_m_item_purchase">Purchase</string>
+    <string name="v_m_coin_add">Add</string>
+    <string name="v_m_refund_all">Refund All</string>
+    <string name="v_m_select_coin">Select coin</string>
+    <string name="v_m_select_item">Select item</string>
+    <string name="ok">OK</string>
+    <string name="v_m_reset_to_defaults">Reset to default inventory</string>
+
+    <string name="v_m_please_select">Please select an item</string>
+    <string name="v_m_refunded">Refunded %1$s</string>
+    <string name="v_m_please_enter">Please enter a coin</string>
+    <string name="v_m_no_more">No more than a dollar please!</string>
+    <string name="v_m_cannot_dispatch">Cannot dispatch %1$s because of empty inventory</string>
+    <string name="v_m_item_successfully">Item %1$s successfully dispatched</string>
+    <string name="v_m_insufficient_funds">Insufficient funds to purchase %1$s\nRefunded %2$s</string>
+    <string name="v_m_item_inventory_back">Item inventory is back to default</string>
+</resources>

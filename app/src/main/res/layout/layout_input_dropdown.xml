@@ -1,0 +1,65 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="textHint"
+            type="java.lang.String" />
+
+        <variable
+            name="viewModel"
+            type="com.vending.machine.app.common.mvp.viewmodel.DropDownFieldViewModel" />
+
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@{textHint}"
+            android:textColorHint="@color/gray2"
+            tools:hint="Spinner hint">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:enabled="true"
+                android:focusable="false"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:text="@={viewModel.value}"
+                android:textAppearance="@style/TextAppearance.Vending.TextInput" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionNext"
+            app:bindSpinner="@{viewModel}" />
+
+        <ImageButton
+            android:id="@+id/dropDownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_dropdown"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+</layout>

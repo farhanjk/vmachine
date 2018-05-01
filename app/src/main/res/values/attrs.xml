@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StyleColor">
+        <attr name="buttonPrimaryDisabled" format="color" />
+        <attr name="buttonPrimaryFocused" format="color" />
+        <attr name="buttonPrimaryPressed" format="color" />
+        <attr name="buttonPrimaryEnabled" format="color" />
+        <attr name="buttonOutlineEnabled" format="color" />
+        <attr name="buttonOutlineDisabled" format="color" />
+        <attr name="buttonOutlinePressed" format="color" />
+        <attr name="buttonOutlineFocused" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.vending.machine.presentation.vending.itemlist.ItemViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <TextView
+            style="@style/TextAppearance.Vending.Body1.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@{viewModel.name}"
+            tools:text="item name" />
+
+        <TextView
+            style="@style/TextAppearance.Vending.Body1.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="end"
+            android:text="@{viewModel.code}"
+            tools:text="I1" />
+
+        <TextView
+            style="@style/TextAppearance.Vending.Body1.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="end"
+            android:text="@{viewModel.price}"
+            tools:text="$0.01" />
+
+        <TextView
+            style="@style/TextAppearance.Vending.Body1.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="end"
+            android:text="@{viewModel.inventory}"
+            tools:text="$0.01" />
+    </LinearLayout>
+</layout>
