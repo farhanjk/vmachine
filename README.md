@@ -1,4 +1,4 @@
-###Overview
+### Overview
 
 A basic Android app which simulates a vending machine.
 
@@ -11,3 +11,18 @@ Following capabilities are supported:
 - Allow selection of items based on item code.
 - Provide option to purchase the selected item if enough funds and inventory is available.
 - Reset inventory of the machine to default/ initial values.
+
+### Unit tests
+```shell
+./gradlew testDebugUnitTest
+```
+
+### Assemble & Install
+
+```shell
+./gradlew assembleDebug
+./gradlew installDebug
+```
+
+- Developed on Android Studio 3.1.2.
+
